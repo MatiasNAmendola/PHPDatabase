@@ -1,0 +1,28 @@
+
+******************************************************
+==              DataLayer.class.php                 ==
+==              @author Phil Butterworth            ==
+******************************************************
+
+DataLayer is a simple php database abstraction layer 
+over PHP PDO. This class is intended to enable the
+developer using it, quick and easy access to their database.
+DataLayer currently provides the following functionality.
+
+- Connect to mysql or postgres.
+- Disconnect from the database.
+- Reconnect/Switch connections.
+- Prepare a query for execution.
+- Bind a value to the query.
+- Execute the query.
+- Retrieve a record at a time as a stdClass object.
+- Begin a transaction (Check your drivers support this for your database vendor).
+- Commit a transaction.
+- Rollback a transaction.
+- Check if you're still in a transaction.
+
+Check the issues section of the git repo to see what else is outstanding and the as I'll begin
+document the functions available with params and return values etc.
+
+You're free to download this class and use it in your applications as you see fit but it is provided
+without any warranty what so ever.
