@@ -42,7 +42,7 @@ class Database {
     }
 
     public function __destruct(){
-        $this->objPDO = null;
+        $this->Disconnect();
     }
 
     public function SetHost($strHost){
@@ -78,7 +78,7 @@ class Database {
     }
 
     public function Reconnect(){
-        $this->objPDO = null;
+        $this->Disconnect();
         $this->Connect();
     }
 
